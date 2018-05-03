@@ -1,0 +1,43 @@
+/*
+This is basic site to create in HTML5 and CSS3.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;  /*This is imp.*/
+}
+
+header {
+    border: 5px solid pink;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+section {
+    width: 75%;
+    float: left;
+    padding: 1em;
+    border: 1px solid black;
+}
+aside {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 1em;
+    border: 1px solid red;
+}
+footer{
+    border: 1em solid blue;
+}
