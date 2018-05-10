@@ -1,0 +1,77 @@
+/* ------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Question: 1: Solution */
+div {
+    margin: 10px;
+    padding: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;  
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* Question: 2: Solution */
+p {
+  border-top: 5px solid teal;
+  border-bottom: 5px solid teal;
+  background-color: #e67e22;
+  color: #34495e;
+  font-family: 'Roboto';
+  margin-top: 10px;
+  padding: 25px;
+}
+
+/* Question: 3: Solution */
+article.txt {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Question: 4: Solution */
+section ol {
+   list-style-type: lower-alpha;
+   padding-left: 20px;
+}
+
+/* Question: 5: Solution */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse; 
+  width: 40%;
+}
+
+td {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+/* Other CSS just to make site good */
+.list-section, .iframe-sec, article,.content{
+  padding: 20px;
+  margin: 20px;
+}
+
+.iframe-sec{
+  margin-bottom: 0px;
+}
