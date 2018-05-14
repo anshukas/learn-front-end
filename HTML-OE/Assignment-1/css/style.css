@@ -1,0 +1,183 @@
+/* ------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #000;
+    font-family: 'Open Sans', 'Oswald', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+/* Global */
+h1 {
+    margin: 0;
+    font-size: 400%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+.center{
+    /* To make center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.relative{
+    position: relative;
+}
+
+/* ------------------------------ */
+/* HEADER SECTION */
+/* ------------------------------ */
+header {
+    background-image: url(../img/home-about-us.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+}
+
+.hero-text-box {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    color: white;
+    padding: 3em;
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    max-width: 80px;
+}
+
+/* ------------------------------ */
+/* Nav SECTION */
+/* ------------------------------ */
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav a {
+    display: block;
+    padding: 8px;
+    background-color: #f39c12;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 12px;
+}
+
+/* ------------------------------ */
+/* Clear fix SECTION */
+/* ------------------------------ */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ------------------------------ */
+/* About Us SECTION */
+/* ------------------------------ */
+article {
+    margin-top: 70px;
+}
+article div {
+    height: 100vh;  
+    background-color: #ccc;
+    text-align: center;
+}
+article h2 {
+    padding: 20px;
+}
+article img {
+    opacity: 0.5;
+}
+article img:hover {
+    opacity: 1;
+}
+
+/* ------------------------------ */
+/* Contact Us SECTION */
+/* ------------------------------ */
+section {
+    height: 100vh;
+    text-align: center;
+}
+section h2 {
+    padding: 20px;
+    color: #fff;
+}
+section div {
+    width: inherit;
+    height: 50%;
+    background-color: #ccc;
+}
+section form {
+    width: 50%;
+}
+section input {
+    padding: 12px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+input[type=text], input[type=email] {
+    width: 100%;
+}
+input[type=submit] {
+    background-color: #f39c12;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ff0000;
+}
+
+/* ------------------------------ */
+/* Footer Menu SECTION */
+/* ------------------------------ */
+footer div {
+    background-color: #fff;
+    width: inherit;
+    position: fixed;
+    bottom: 0;
+    left: 237px;
+}
+footer nav {
+    margin-left: 40px;
+}
+footer nav a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #000;
+    height: 50px;
+}
