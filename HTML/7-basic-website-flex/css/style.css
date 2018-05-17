@@ -8,3 +8,21 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.container {
+    display: flex;
+    width: 80%;
+}
+
+.col-1 {
+ 
+    border: 1px solid red;
+}
+
+.col-2 {
+ 
+    border: 2px solid gray;
+}
+.col-3 {
+ 
+    border: 2px solid black;
+}

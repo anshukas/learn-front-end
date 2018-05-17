@@ -1,0 +1,61 @@
+/*
+- Newsletter button color code: #51CCA8;
+- green: #51CCAB
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    margin: 0;
+}
+
+/* ------------------------------ */
+/* HEADER SECTION */
+/* ------------------------------ */
+header {
+    background-image: url(../img/banner-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+    color: #fff;
+    display: flex;
+    padding: 15px;
+}
+nav {
+    margin-left: auto;
+}
+.conatiner {
+    display: flex;
+    border: 1px solid red;
+}
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex:1.2;
+    background-color: #51B9CC;
+    display: flex;
+}
+.col-1 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;    
+}
+.text {
+    color: #fff;
+    margin: auto;
+    margin-right: 30%;
+}
+
+.overlay {
+    border: 1px solid black;
+    padding: 60px;
+}
