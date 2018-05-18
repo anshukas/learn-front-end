@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
@@ -14,6 +15,7 @@ html {
 h1 {
     margin: 0;
 }
+
 /* ------------------------------ */
 /* HEADER SECTION */
 /* ------------------------------ */
@@ -29,7 +31,7 @@ header {
 nav {
     margin-left: auto;
 }
-.conatiner, .car-conatiner {
+.conatiner {
     display: flex;
     /* border: 1px solid red; */
 }
@@ -37,11 +39,11 @@ nav {
     flex: 1;
 }
 .col-2 {
-    flex:1.1;
+    flex:1.2;
     background-color: #51B9CC;
     display: flex;
 }
-img {
+.col-1 img {
     max-width: 100%;
     height: 500px;
     object-fit: cover;
@@ -49,83 +51,35 @@ img {
 }
 .text {
     color: #fff;
-    /* margin: auto;
-    margin-right: 30%; */
+    margin: auto;
+    margin-right: 30%;
 }
 .background {
     display: flex;
     width: 100%;
     height: 500px;
 }
-/* ------------------------------ */
-/* Fore-ground Div SECTION */
-/* ------------------------------ */
 .foreground {
     flex:1;
-    margin-left: -83%;
+    margin-left: -84%;
     color: #000;
-    align-self: center;
-     border: 1px solid green;
-    display: flex;
-    max-width: 70%;
-}
-.foreground .col-1 {
-    flex: 1.5;
+    max-width: 39%;
     background-color: #fff;
-    padding: 75px;
+    align-self: center;
+    padding: 30px;
 }
-.foreground .col-2 {
-    justify-content: flex-end;
-    align-items: center;
-}
+
 .foreground  h1 {
+    margin: 0;
     padding: 10px;
     display: flex;
     justify-content: center;
 }
+
 .foreground  p {
     margin-top: 25px;
     margin-bottom: 25px;
 }
-section .background,
-section .foreground {
-    flex-direction: row-reverse;
-}
-section .col-2 {
-    background-color: #51CCA8;
-}
-
-/* Car container */
-.car-conatiner{
-    display: flex;
-    height: 500px;;
-}
-.incline {
-    border: 1px solid red;  
-    transform: skew(-30deg);
-}
-.car-col-1 {
-    flex: 1;
-    background-color: #51CCA8;
-    /* transform:skew(-21deg) */
-}
-.car-col-2 {
-    flex: 1;
-    /* transform:skew(-21deg); */
-    background-color: #51B9CC;
-}
-.car-col-1-incline {
-    border: 1px solid red;
-    transform:skew(-21deg);
-    height: inherit;
-    border-left: 1px solid red;
-}
-.car-col-2-incline {
-    transform:skew(-21deg);
-    height: inherit;
-}
-
-
 
 .btn {
     display: inline-block;
