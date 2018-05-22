@@ -22,16 +22,27 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;  
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+.menu-fix {
+    display: flex;
+    position: fixed;
+    top: 15px;
+    width: 99%;
     color: #fff;
-    display: flex;
-    padding: 15px;
 }
-nav {
-    margin-left: auto;
+
+.menu-fix h1 {
+    margin-left: 0.5%;
 }
-.conatiner, .car-conatiner {
+
+.logo {
+    flex: 1;
+}
+.conatiner {
     display: flex;
-    /* border: 1px solid red; */
 }
 .col-1 {
     flex: 1;
@@ -49,8 +60,6 @@ img {
 }
 .text {
     color: #fff;
-    /* margin: auto;
-    margin-right: 30%; */
 }
 .background {
     display: flex;
@@ -95,26 +104,82 @@ section .col-2 {
     background-color: #51CCA8;
 }
 
+section.conatiner > div.foreground > div.col-2 {
+    justify-content: flex-start;
+}
+
 /* Car container */
 .incline {
     background: #51B9CC;
 }
 .row {
     height: inherit;
-    background: linear-gradient(-63deg, transparent 47.52%, #51CCA8 24.52%);
-    border: 1px solid black;
+    background: linear-gradient(-63deg, transparent 49.52%, #51CCA8 24.52%);
+    display: flex;
+    /* border: 2px solid red; */
 }
 
+.row-fix {
+    /* border: 3px solid yellow; */
+    display: flex;
+    width: 70%;
+    margin-left: 17%;
+    justify-content: space-between;
+    padding: 20px 0;
+}
 .row .col {
     display: flex;
     flex-direction: column;
     width: 30%;
-    border: 2px solid red;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
 }
 
+.row .col-p2 {
+    background: #fff;
+    padding: 25px;
+}
+
+.row .col-p2 h1 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.row .col img {
+    height: auto; 
+}
+
+.col-margin {
+    margin-left: 10%;
+}
+
+footer {
+    background: #51CCA8;
+    height: 200px;  /*temp*/
+    display: flex;
+    flex-direction: column;
+}
+
+.row-1 {
+    height: 20%;
+}
+
+.center-txt {
+    margin: auto;
+}
+
+input {
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+}
+input[type=email] {
+    width: 70%;
+}
+input[type=submit] {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+}
 
 .btn {
     display: inline-block;
