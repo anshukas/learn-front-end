@@ -152,15 +152,23 @@ section.conatiner > div.foreground > div.col-2 {
     margin-left: 10%;
 }
 
+/* ------------------------------ */
+/* Footer SECTION */
+/* ------------------------------ */
 footer {
     background: #51CCA8;
-    height: 200px;  /*temp*/
     display: flex;
     flex-direction: column;
 }
 
 .row-1 {
-    height: 20%;
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+footer > div:nth-child(2) > p {
+    width: 90%;
+    margin: auto;
 }
 
 .center-txt {
