@@ -1,0 +1,112 @@
+/*
+Color Codes : 
+    #465DAD;
+    #5D9AC7;
+    #667DC2;
+    #7E8FB1;
+    #2E387D;
+    #896BF3;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background: #465DAD;
+}
+
+/* ------------------------------ */
+/* HEADER SECTION */
+/* ------------------------------ */
+
+hr {
+    margin-top: 12px;
+}
+
+hr.style-six {
+    padding: 0;
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+header i {
+    font-size: 24px;
+    color: #ccc;
+}
+
+header{
+    display: flex;
+}
+
+.container{
+    width: 98%;
+    margin: 10px auto;
+}
+
+.col-1 {
+    flex: 0.2;
+}
+.col-2 {
+    flex: 1;
+}
+.col-3 {
+    flex: 15;
+}
+.col-4 {
+    /* flex: 1; */
+}
+.col-5 {
+    flex: 0.1;
+    
+}
+.col-6 {
+    /* flex: 1; */
+    
+}
+
+/* Nav */
+nav {
+    background-color: #896BF3;
+    border-radius: 5px;
+    /* float: right; */
+    margin-top: -3%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.tip {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 8%;
+    margin-right: 2%;
+}
+
+.tip > i {
+    color: red;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 96%;
+}
+
+/* Mouse over tool tip */
+div.col-4:hover {
+    background: yellow;
+}
