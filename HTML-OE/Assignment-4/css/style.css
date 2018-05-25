@@ -107,6 +107,6 @@ nav a {
 }
 
 /* Mouse over tool tip */
-div.col-4:hover {
+div.containerdiv.col-4:hover {
     background: yellow;
 }
