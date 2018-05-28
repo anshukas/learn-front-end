@@ -5,7 +5,7 @@ Color Codes :
     #667DC2;
     #7E8FB1;
     #2E387D;
-    #896BF3;
+    #896BF3; done
 */
 *{
     margin: 0;
@@ -60,6 +60,7 @@ header{
 }
 .col-4 {
     /* flex: 1; */
+    /* border: 1px solid red; */
 }
 .col-5 {
     flex: 0.1;
@@ -92,11 +93,12 @@ nav a {
 
 .tip {
     float: right;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     flex-direction: column;
-    width: 8%;
-    margin-right: 2%;
+    position: absolute;
+    right: 54px;
+    z-index: 20000;
 }
 
 .tip > i {
@@ -107,6 +109,65 @@ nav a {
 }
 
 /* Mouse over tool tip */
-div.containerdiv.col-4:hover {
-    background: yellow;
+div.col-4:hover .tip {
+    display: flex;
 }
+
+div > header > div.col-4 > i {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ------------------------------ */
+/*  Main content SECTION */
+/* ------------------------------ */
+
+.content {
+    height: 800px; 
+    border: 1px solid red;
+    display: flex;
+}
+.content aside {
+    flex: 1;
+    border: 1px solid red;
+}
+.content .main-content {
+    flex: 5;
+    border: 1px solid red;
+}
+
+/** Events**/
+.events {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    border: 1px solid;
+  }
+  
+  .flex-item {
+    background: rgba(155, 194, 223, 0.2);
+    padding: 5px;
+    width: 33%;
+    height: 290px;
+    margin: 8px;
+    color: white;
+  }
+  section > div > ul > li:nth-child(1) > h2 {
+      text-transform: uppercase;
+      font-size: 15px;
+      color: #ccc;
+  }
+
+  .line::after {
+    content: "";
+    border: 2px solid #896BF3;
+    display: block;
+    width: 15%;
+    margin: 2px;
+  }
